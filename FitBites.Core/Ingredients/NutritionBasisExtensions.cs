@@ -11,7 +11,7 @@ public static class NutritionBasisExtensions
             NutritionBasis.Per100Gram => 100m,
             NutritionBasis.Per100Milliliter => 100m,
             NutritionBasis.PerPiece => 1m,
-            _ =>  throw new ArgumentOutOfRangeException(nameof(basis))
+            _ =>  throw new ArgumentOutOfRangeException(nameof(basis)) //test
         };
     }
 
