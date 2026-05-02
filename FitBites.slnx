@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="FitBites.Api/FitBites.Api.csproj" />
   <Project Path="FitBites.Core/FitBites.Core.csproj" />
 </Solution>

@@ -11,9 +11,9 @@ public sealed class RecipeIngredient
         ArgumentNullException.ThrowIfNull(ingredient);
         ArgumentNullException.ThrowIfNull(quantity);
 
-        if (Quantity!.Unit != Ingredient.NutritionBasis.RequiredUnit())
+        if (quantity.Unit != ingredient.NutritionBasis.RequiredUnit())
         {
-            throw new InvalidOperationException($"Quantity unit {Quantity.Unit} is not valid for basis {Ingredient.NutritionBasis}");
+            throw new InvalidOperationException($"Quantity unit {quantity.Unit} is not valid for basis {ingredient.NutritionBasis}");
         }
 
         _ingredient = ingredient;
