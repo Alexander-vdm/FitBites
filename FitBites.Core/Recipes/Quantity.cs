@@ -2,6 +2,18 @@
 
 public sealed record Quantity(decimal Amount, Unit Unit)
 {
+    public static Quantity Miligrams(decimal mg)
+    {
+        ArgumentOutOfRangeException.ThrowIfZero(mg);
+        return new Quantity(mg, Unit.Milligram);
+    }
+
+    public static Quantity Microgram(decimal mcg)
+    {
+        ArgumentOutOfRangeException.ThrowIfZero(mcg);
+        return new Quantity(mcg, Unit.Microgram);
+    }
+
     public static Quantity Grams(decimal grams)
     {
         ArgumentOutOfRangeException.ThrowIfZero(grams);

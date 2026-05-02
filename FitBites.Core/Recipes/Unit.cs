@@ -2,6 +2,8 @@
 
 public enum Unit
 {
+    Milligram,
+    Microgram,
     Gram,
     Milliliter,
     Piece
